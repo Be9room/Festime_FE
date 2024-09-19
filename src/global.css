@@ -1,3 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.bold-14 {
+  @apply font-notoSansKr font-bold text-size-14 leading-normal;
+}
