@@ -6,7 +6,7 @@ const MeshGradient = ({ amount, lifetime, primaryColor, secondaryColor }) => {
 
   return (
     <>
-      <canvas ref={canvasRef} className="fixed top-0 left-0 w-screen h-screen z-[-1]" />
+      <canvas ref={canvasRef} className="fixed top-0 left-0 w-screen h-screen z-[-1] will-change-transform" />
       <img
         src={noise}
         alt="Overlay Image"

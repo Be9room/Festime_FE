@@ -22,6 +22,7 @@ const addCircle = (circles, canvas, minRadius, maxRadius, circleLifetime, ctx, p
 
 const animateCircles = (ctx, canvas, circles, animate) => {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
+
   circles.forEach((circle, index) => {
     circle.update();
     if (circle.isExpired()) circles.splice(index, 1);
@@ -60,7 +61,6 @@ const useCanvasAnimation = (amount, lifetime, primaryColor, secondaryColor) => {
     };
 
     animate();
-    canvas.style.mixBlendMode = "screen";
     window.addEventListener("resize", () => resizeCanvas(canvas, setRadiusValues));
 
     return () => {

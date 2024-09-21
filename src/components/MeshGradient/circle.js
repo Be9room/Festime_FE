@@ -39,6 +39,6 @@ export default class Circle {
   }
 
   isExpired() {
-    return Date.now() - this.birthTime > this.lifetime;
+    return Date.now() - this.birthTime > this.lifetime + 10;
   }
 }
