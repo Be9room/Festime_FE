@@ -1,7 +1,10 @@
 import Footer from "../Footer";
 import Header from "../Header";
+import useFadeOnScroll from "./useFadeOnScroll";
 
 const Layout = ({ children }) => {
+  useFadeOnScroll();
+
   return (
     <>
       <Header />

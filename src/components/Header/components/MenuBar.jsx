@@ -8,7 +8,7 @@ const MenuBar = ({ isMenuOpen, menuLinkArray }) => {
       }`}
     >
       <ul
-        className={`grayblock grayblock-block-hover will-change-opacity flex flex-col p-3 backdrop-blur-2xl transition-opacity duration-200 ${
+        className={`grayblock grayblock-block-hover will-change-opacity flex flex-col p-3 backdrop-blur-2xl transition-opacity duration-500 ease-in-out ${
           isMenuOpen ? "opacity-100" : "pointer-events-none opacity-0"
         }`}
       >
