@@ -4,6 +4,10 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  @apply break-words text-text-primary;
+}
+
 .medium-14 {
   @apply font-notoSansKr text-size-14 font-medium leading-normal;
 }

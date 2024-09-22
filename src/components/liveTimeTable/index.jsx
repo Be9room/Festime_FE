@@ -4,12 +4,12 @@ const LiveTimeTable = () => {
       <div className="medium-14 flex w-full flex-row items-center gap-3">
         <span className="text-live-red">LIVE</span>
         <hr className="h-0.5 flex-1 border-none bg-gradient-to-r from-[#FF3B3B] via-[#BBBBBB80] to-[#BBBBBB00]" />
-        <span className="text-text-primary">다비치</span>
+        <span>다비치</span>
       </div>
       <div className="medium-14 flex w-full flex-row items-center gap-3">
-        <span className="text-text-primary">NEXT</span>
+        <span>NEXT</span>
         <hr className="h-0.5 flex-1 border-none bg-gradient-to-r from-[#BBBBBB00] to-[#BBBBBB]" />
-        <span className="text-text-primary">XXXXX</span>
+        <span>XXXXX</span>
       </div>
     </div>
   );
