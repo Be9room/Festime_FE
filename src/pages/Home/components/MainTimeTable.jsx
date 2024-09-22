@@ -26,7 +26,7 @@ const MainTimetable = () => {
         </p>
       </div>
       <CurrentLiveBlock />
-      <LinkBlock text="타임 테이블 확인하기" className="mt-3" />
+      <LinkBlock text="타임 테이블 확인하기" to="/timetable" className="mt-3" />
     </div>
   );
 };

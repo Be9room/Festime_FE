@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Home from "./pages/Home";
 import MeshGradient from "./components/MeshGradient/index";
+import TimeTable from "./pages/TimeTable";
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/timetable" element={<TimeTable />} />
         </Routes>
       </BrowserRouter>
     </>

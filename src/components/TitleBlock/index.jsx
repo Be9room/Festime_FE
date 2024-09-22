@@ -1,8 +1,8 @@
 import CircleIcon from "../../assets/svgs/circle.svg?react";
 
-const TitleBlock = ({ title, subtitle }) => {
+const TitleBlock = ({ title, subtitle, className }) => {
   return (
-    <div className="flex w-full flex-col gap-3 p-4">
+    <div className={`flex w-full flex-col gap-3 p-4 ${className}`}>
       <div className="flex w-full flex-row items-center gap-2">
         <CircleIcon />
         <h3 className="bold-16">{title}</h3>

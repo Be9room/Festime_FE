@@ -6,7 +6,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 const MENU_LINK_ARRAY = [
-  { text: "축제 타임 테이블", to: "/" },
+  { text: "축제 타임 테이블", to: "/timetable" },
   { text: "부스, F&B 위치 및 정보", to: "/" },
   { text: "축제 안내사항", to: "/" },
   { text: "축제 방명록", to: "/" },

@@ -8,7 +8,7 @@ const MenuLink = ({ text, to = "/" }) => {
     <li className="w-full">
       <button
         className="flex w-full flex-row items-center justify-between gap-3 rounded-lg px-4 py-2 duration-200 hover:bg-grayscale-gray-20"
-        onClick={() => navigate({ to })}
+        onClick={() => navigate(to)}
       >
         <span className="bold-14">{text}</span>
         <CircleIcon />
