@@ -15,8 +15,8 @@ const CurrentTimetable = () => {
   });
 
   return (
-    <>
-      <p className="bold-16 mt-8 w-full text-center text-text-primary">
+    <div className="mb-32 mt-8 flex w-full flex-col">
+      <p className="bold-16 w-full text-center text-text-primary">
         NOW {dateObj.toLocaleDateString("en-ZA").replaceAll(`/`, ".")}
       </p>
       <div className="relative mb-4 w-full">
@@ -27,7 +27,7 @@ const CurrentTimetable = () => {
       </div>
       <LiveTimeTable />
       <LinkBlock text="타임 테이블 확인하기" className="mt-3" />
-    </>
+    </div>
   );
 };
 
