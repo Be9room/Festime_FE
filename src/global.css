@@ -5,7 +5,11 @@
 @tailwind utilities;
 
 * {
-  @apply break-words text-text-primary;
+  @apply select-none break-words text-text-primary;
+}
+
+img {
+  @apply pointer-events-none;
 }
 
 .medium-14 {
