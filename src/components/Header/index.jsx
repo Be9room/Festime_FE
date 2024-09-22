@@ -40,7 +40,7 @@ const Header = () => {
         </div>
       </header>
       {isMenuOpen && <Dimmer closeDimmer={() => setIsMenuOpen(false)} />}
-      <MenuBar isMenuOpen={isMenuOpen} menuLinkArray={MENU_LINK_ARRAY} />
+      <MenuBar isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} menuLinkArray={MENU_LINK_ARRAY} />
     </>
   );
 };

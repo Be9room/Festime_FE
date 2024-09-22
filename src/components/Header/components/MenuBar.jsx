@@ -1,6 +1,9 @@
+import { useNavigate } from "react-router-dom";
 import MenuLink from "./MenuLink";
 
-const MenuBar = ({ isMenuOpen, menuLinkArray }) => {
+const MenuBar = ({ isMenuOpen, setIsMenuOpen, menuLinkArray }) => {
+  const navigate = useNavigate();
+
   return (
     <nav
       className={`fixed left-1/2 top-20 w-full max-w-md -translate-x-1/2 overflow-hidden px-5 duration-200 ${
@@ -12,7 +15,10 @@ const MenuBar = ({ isMenuOpen, menuLinkArray }) => {
           isMenuOpen ? "opacity-100" : "pointer-events-none opacity-0"
         }`}
       >
-        {menuLinkArray && menuLinkArray.map(({ text, to }) => <MenuLink key={text} text={text} to={to} />)}
+        {menuLinkArray &&
+          menuLinkArray.map(({ text, to }) => (
+            <MenuLink key={text} text={text} clickFunction={() => navigate(to)} setIsMenuOpen={setIsMenuOpen} />
+          ))}
       </ul>
     </nav>
   );
