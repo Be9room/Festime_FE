@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 import timerBackground from "../../../assets/images/timerBackground.webp";
-import LiveTimeTable from "../../../components/liveTimeTable";
-import LinkBlock from "./../../../components/LinkBlock/index";
+import LinkBlock from "../../../components/LinkBlock/index";
+import CurrentLiveBlock from "../../../components/CurrentLiveBlock";
 
-const CurrentTimetable = () => {
+const MainTimetable = () => {
   const [dateObj, setDateObj] = useState(new Date());
 
   useEffect(() => {
@@ -25,10 +25,10 @@ const CurrentTimetable = () => {
           {dateObj.toLocaleTimeString("en-ZA")}
         </p>
       </div>
-      <LiveTimeTable />
+      <CurrentLiveBlock />
       <LinkBlock text="타임 테이블 확인하기" className="mt-3" />
     </div>
   );
 };
 
-export default CurrentTimetable;
+export default MainTimetable;

@@ -1,7 +1,7 @@
 import Layout from "../../components/Layout";
 import mainWebp from "../../assets/images/main.webp";
 import ArrowDown from "../../assets/svgs/arrowDown.svg?react";
-import CurrentTimetable from "./components/currentTimetable";
+import MainTimetable from "./components/MainTimeTable";
 import QuickLink from "./components/QuickLink";
 
 const LINK_ARRAY = [
@@ -16,7 +16,7 @@ const Home = () => {
     <Layout>
       <img className="h-[90dvh] w-full object-contain px-2 pb-8" src={mainWebp} />
       <ArrowDown className="my-8 w-full" />
-      <CurrentTimetable />
+      <MainTimetable />
       <QuickLink linkArray={LINK_ARRAY} />
     </Layout>
   );
