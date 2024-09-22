@@ -1,6 +1,8 @@
+import ScrollToTop from "./scrollToTop";
 import useFadeOnScroll from "./useFadeOnScroll";
 
 const Layout = ({ children }) => {
+  ScrollToTop();
   useFadeOnScroll();
 
   return (
