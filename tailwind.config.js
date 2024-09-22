@@ -35,6 +35,7 @@ export default {
 
         "text-primary": "#BBBBBB",
         "text-week": "#BBBBBB80",
+        "text-zero": "#BBBBBB00",
         "background-base": "#1a1a1a",
         "background-color1": "#1b2531",
         "background-color12": "#2b2032"

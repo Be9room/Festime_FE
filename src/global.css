@@ -4,6 +4,18 @@
 @tailwind components;
 @tailwind utilities;
 
+.medium-14 {
+  @apply font-notoSansKr text-size-14 font-medium leading-normal;
+}
+
 .bold-14 {
-  @apply font-notoSansKr font-bold text-size-14 leading-normal;
+  @apply font-notoSansKr text-size-14 font-bold leading-normal;
+}
+
+.bold-16 {
+  @apply font-notoSansKr text-size-16 font-bold leading-normal;
+}
+
+.bold-64 {
+  @apply font-notoSansKr text-size-64 font-bold leading-normal;
 }

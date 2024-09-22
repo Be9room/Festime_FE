@@ -4,7 +4,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header />
-      <main className="mx-auto mt-16 max-w-md">{children}</main>
+      <main className="mx-auto mt-20 flex max-w-md flex-col px-6">{children}</main>
     </>
   );
 };
