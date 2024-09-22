@@ -33,11 +33,11 @@ img {
 }
 
 .grayblock-button-hover {
-  @apply duration-200 hover:border-grayscale-gray-70 hover:bg-grayscale-gray-30;
+  @apply duration-300 hover:border-grayscale-gray-70 hover:bg-grayscale-gray-30;
 }
 
 .grayblock-block-hover {
-  @apply duration-200 hover:border-grayscale-gray-70;
+  @apply duration-300 hover:border-grayscale-gray-70;
 }
 
 .darkgrayblock {
@@ -45,9 +45,9 @@ img {
 }
 
 .darkgrayblock-button-hover {
-  @apply duration-200 hover:border-grayscale-gray-70 hover:bg-grayscale-darkgray-40;
+  @apply duration-300 hover:border-grayscale-gray-70 hover:bg-grayscale-darkgray-40;
 }
 
 .darkgrayblock-block-hover {
-  @apply duration-200 hover:border-grayscale-gray-70;
+  @apply duration-300 hover:border-grayscale-gray-70;
 }

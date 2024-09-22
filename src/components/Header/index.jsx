@@ -22,10 +22,10 @@ const Header = () => {
   return (
     <>
       <header className="fixed left-1/2 top-0 z-50 flex w-screen min-w-80 -translate-x-1/2 transform justify-center bg-gradient-to-b from-[#1a1a1a] via-[#1a1a1aB3] to-[#1a1a1a00]">
-        <div className="bold-14 animate-fadeIn mx-auto flex min-w-80 max-w-md flex-1 flex-row justify-between p-5">
+        <div className="bold-14 mx-auto flex min-w-80 max-w-md flex-1 flex-row justify-between p-5">
           <button
             onClick={() => navigate("/")}
-            className="grayblock grayblock-button-hover flex h-10 flex-row items-center gap-3 p-3 backdrop-blur-2xl"
+            className="animate-fadeIn grayblock grayblock-button-hover flex h-10 flex-row items-center gap-3 p-3 backdrop-blur-2xl"
           >
             <span>飛 龍 祭</span>
             <div className="h-6 w-[0.0625rem] bg-grayscale-gray-30" />
@@ -33,7 +33,7 @@ const Header = () => {
           </button>
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="grayblock grayblock-button-hover flex h-10 flex-row items-center gap-3 p-3 backdrop-blur-2xl"
+            className="animate-fadeIn grayblock grayblock-button-hover flex h-10 flex-row items-center gap-3 p-3 backdrop-blur-2xl"
           >
             {isMenuOpen ? <ArrowUpSVG className="size-4 rotate-180" /> : <MenuSVG />}
           </button>
