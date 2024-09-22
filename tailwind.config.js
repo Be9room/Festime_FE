@@ -25,6 +25,7 @@ export default {
         "grayscale-gray": "#888888",
         "grayscale-gray-20": "#88888833",
         "grayscale-gray-30": "#8888884D",
+        "grayscale-gray-50": "#88888880",
         "grayscale-gray-70": "#888888B3",
 
         "live-red": "#FF3B3B",

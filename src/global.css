@@ -27,3 +27,15 @@ img {
 .bold-64 {
   @apply font-notoSansKr text-size-64 font-bold leading-normal;
 }
+
+.grayblock {
+  @apply rounded-[14px] border border-solid border-grayscale-gray-30 bg-grayscale-gray-20;
+}
+
+.grayblock-button-hover {
+  @apply hover:bg-grayscale-gray-50 duration-200 hover:border-grayscale-gray-70;
+}
+
+.grayblock-block-hover {
+  @apply duration-200 hover:border-grayscale-gray-70;
+}
