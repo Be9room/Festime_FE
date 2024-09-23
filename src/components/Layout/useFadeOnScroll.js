@@ -21,7 +21,7 @@ const useFadeOnScroll = () => {
     );
 
     topLevelElements.forEach((element) => {
-      element.classList.add("opacity-0", "duration-300", "ease-out");
+      element.classList.add("opacity-0", "duration-300", "ease-in-out");
       observer.observe(element);
     });
 

@@ -1,22 +1,31 @@
-import CurrentLiveBlock from "../../components/CurrentLiveBlock";
 import Layout from "../../components/Layout";
 import LinkBlock from "../../components/LinkBlock";
+import TabList from "../../components/TabList";
+import TimeTableBlock from "../../components/TimeTableBlock/lindex";
 import TitleBlock from "../../components/TitleBlock";
+import TIME_TABLE from "../../constants/timeTable";
 
 const TimeTable = () => {
   return (
     <Layout>
-      <TitleBlock title="현재 진행중인 일정" />
-      <CurrentLiveBlock />
+      <TitleBlock
+        title="비룡제 공연 순서 안내"
+        subtitle={[
+          "2024년 비룡제 공연 순서에 대하여 안내드립니다.",
+          "아래 내용 확인하시어 비룡제 공연 관람에 참고해 주시길 바랍니다."
+        ]}
+      />
 
       <TitleBlock className="mt-8" title="일별 타임 테이블" />
+      <TabList lists={TIME_TABLE} listComponent={TimeTableBlock} />
 
       <TitleBlock
         className="mt-8"
         title="유의 사항"
-        subtitle="여기에 유의사항 입력 여기에 유의사항 입력 여기에 유의사항 입력 여기에 유의사항 입력 여기에 유의사항 입력 여기에 유의사항 입력 여기에 유의사항 입력 여기에 유의사항 입력 여기에 유의사항 입력 여기에 유의사항 입력 여기에 유의사항 입력 여기에 유의사항 입력 "
+        subtitle={["재학생존 입장: 17:00", "무대 시작: 17:30", "공연 시간은 당일 상황에 따라 변경될 수 있습니다."]}
       />
-      <LinkBlock text="총학생회 문의하기" />
+      <LinkBlock text="총학생회 이메일" />
+      <LinkBlock className="mt-3" text="총학생회 전화" />
     </Layout>
   );
 };
