@@ -2,13 +2,26 @@ import MenuSVG from "../../assets/svgs/menu.svg?react";
 import MenuBar from "./components/MenuBar";
 import ArrowUpSVG from "../../assets/svgs/arrowDown.svg?react";
 import Dimmer from "./components/Dimmer";
-import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { useNavigate, useLocation } from "react-router-dom";
 import MENU_LINK_ARRAY from "../../constants/menuLinkArray";
 
+const PAGE_NAME = {
+  "/": "Home",
+  "/timetable": "TimeTable"
+};
+
 const Header = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const navigate = useNavigate();
+  const location = useLocation();
+  const [pageTitle, setPageTitle] = useState("Home");
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  useEffect(() => {
+    const path = location.pathname;
+    const title = PAGE_NAME[path] || "404";
+    setPageTitle(title);
+  }, [location.pathname]);
 
   return (
     <>
@@ -20,7 +33,7 @@ const Header = () => {
           >
             <span>飛 龍 祭</span>
             <div className="h-6 w-[0.0625rem] bg-grayscale-gray-30" />
-            <span className="rounded-lg bg-grayscale-gray-20 px-2 py-0.5">Home</span>
+            <span className="rounded-lg bg-grayscale-gray-20 px-2 py-0.5">{pageTitle}</span>
           </button>
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
