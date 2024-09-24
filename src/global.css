@@ -20,6 +20,10 @@ img {
   @apply font-notoSansKr text-size-14 font-bold leading-normal;
 }
 
+.bold-128 {
+  @apply font-notoSansKr text-9xl font-bold leading-normal;
+}
+
 .bold-16 {
   @apply font-notoSansKr text-size-16 font-bold leading-normal;
 }

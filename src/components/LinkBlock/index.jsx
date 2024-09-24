@@ -15,7 +15,7 @@ const LinkBlock = ({ text, className, to = "/" }) => {
       if (navigator.share) {
         navigator
           .share({
-            title: "Share this content",
+            title: "2024 인하대학교 비룡제",
             url: window.location.href
           })
           .catch((error) => {

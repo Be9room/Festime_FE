@@ -18,6 +18,9 @@ export default {
         bold: "700",
         medium: "500"
       },
+      height: {
+        "no-scroll": "calc(100dvh - 6.75rem)"
+      },
       keyframes: {
         fadeIn: {
           "0%": { opacity: 0 },
