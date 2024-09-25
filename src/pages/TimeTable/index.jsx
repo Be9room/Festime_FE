@@ -24,9 +24,9 @@ const TimeTable = () => {
         title="유의 사항"
         subtitle={["재학생존 입장: 17:00", "무대 시작: 17:30", "공연 시간은 당일 상황에 따라 변경될 수 있습니다."]}
       />
-      <LinkBlock text="총학생회 이메일" to="mailto:inhasg.festival.2024@gmail.com" />
-      <LinkBlock className="mt-3" text="총학생회 전화번호" to="tel:+82328608451" />
-      <LinkBlock className="mt-3" text="현 페이지 공유하기" to="share" />
+      <LinkBlock text="2024 비룡제 축제 이메일" to="mailto:inhasg.festival.2024@gmail.com" />
+      <LinkBlock className="mt-3" text="인하대학교 총학생회" to="tel:+82328608451" />
+      <LinkBlock className="mt-3" text="현재 페이지 공유하기" to="share" />
     </Layout>
   );
 };

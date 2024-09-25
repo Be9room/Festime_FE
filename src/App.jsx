@@ -1,11 +1,13 @@
 import "./global.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import Home from "./pages/Home";
 import MeshGradient from "./components/MeshGradient/index";
-import TimeTable from "./pages/TimeTable";
 import Header from "./components/Header/index";
 import Footer from "./components/Footer/index";
+
+import Home from "./pages/Home";
+import Ticketing from "./pages/Ticketing";
+import TimeTable from "./pages/TimeTable";
 import PageNotFound from "./pages/PageNotFound";
 
 const App = () => {
@@ -16,6 +18,7 @@ const App = () => {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/ticketing" element={<Ticketing />} />
           <Route path="/timetable" element={<TimeTable />} />
           <Route path="*" element={<PageNotFound />} />
         </Routes>
