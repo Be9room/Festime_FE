@@ -12,6 +12,10 @@ img {
   @apply pointer-events-none;
 }
 
+.medium-12 {
+  @apply font-notoSansKr text-xs font-medium leading-normal;
+}
+
 .medium-14 {
   @apply font-notoSansKr text-size-14 font-medium leading-normal;
 }
