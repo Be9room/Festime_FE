@@ -7,9 +7,21 @@ const Entry = () => {
   return (
     <Layout>
       <TitleBlock
+        title="재학생존 입장 안내"
+        subtitle={[
+          "현 페이지는 아래 내용을 포함하고 있습니다.",
+          "• 비룡제 재학생존 운영 안내",
+          "• 비룡제 재학생존 입장 안내"
+        ]}
+      />
+
+      <Divider />
+
+      <TitleBlock
         title="비룡제 재학생존 운영 안내"
         subtitle={[
-          "각 일자별로 온라인 티켓팅이 가능하신 학우분들은 아래의 설명을 꼼꼼히 읽으시고 재학생존 입장을 위한 팔찌 수령을 해주시기를 바랍니다."
+          "비룡제 재학생존 운영에 대하여 안내드립니다.",
+          "아래 내용 확인하시어 비룡제 재학생존 이용에 참고해 주시길 바랍니다."
         ]}
       />
 
@@ -132,7 +144,9 @@ const Entry = () => {
         ]}
       />
 
-      <TitleBlock className="mt-8" title="문의사항" />
+      <Divider />
+
+      <TitleBlock title="문의사항" />
       <LinkBlock text="2024 비룡제 축제 이메일" to="mailto:inhasg.festival.2024@gmail.com" />
       <LinkBlock className="mt-3" text="인하대학교 총학생회" to="tel:+82328608451" />
       <LinkBlock className="mt-3" text="현재 페이지 공유하기" to="share" />
