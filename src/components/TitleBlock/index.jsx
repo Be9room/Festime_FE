@@ -5,11 +5,11 @@ const TitleBlock = ({ title, subtitle, className }) => {
     <div className={`flex w-full flex-col gap-2 p-4 ${className}`}>
       <div className="mb-1 flex w-full flex-row items-center gap-2">
         <CircleIcon />
-        <h3 className="bold-16">{title}</h3>
+        <h3 className="bold-16 break-keep">{title}</h3>
       </div>
       {subtitle &&
         subtitle.map((text) => (
-          <p key={text} className="medium-14 w-full">
+          <p key={text} className="medium-14 w-full break-keep">
             {text}
           </p>
         ))}

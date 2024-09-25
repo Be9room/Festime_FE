@@ -7,7 +7,60 @@ const Support = () => {
   return (
     <Layout>
       <TitleBlock
-        className="mt-8"
+        title="축제 안내사항"
+        subtitle={[
+          "현 페이지는 아래 내용을 포함하고 있습니다.",
+          "• 비룡제 통행제한구역 안내",
+          "• 대운동장 반입 금지 물품 안내",
+          "• 2024년 비룡제 유니폼 및 굿즈 수령 안내",
+          "• 총학생회 본부 부스 & 의무실 운영 안내"
+        ]}
+      />
+
+      <Divider />
+
+      <TitleBlock
+        title="비룡제 통행제한구역 안내"
+        subtitle={[
+          <span key="title" className="bold-14">
+            • 통행 제한 구역
+          </span>,
+          "인하대역 4번 출구 ↔ 인하대학교 대운동장 통로(보도)",
+          "인하대학교 학군단 ↔ 인하대학교 대운동장 사이 구역(비룡제 기간 무대 뒤편)",
+          <br key="br" />,
+          <span key="title" className="bold-14">
+            • 제한 사유
+          </span>,
+          "재학생 안전 확보, 무대 장비 및 설비 운용 간 안전 확보",
+          <br key="br" />,
+          <span key="title" className="bold-14">
+            • 대체 통로
+          </span>,
+          "인하대역 3번 출구 – 캠퍼스 내 돌담길 – 테니스장/로스쿨 사잇길"
+        ]}
+      />
+
+      <Divider />
+
+      <TitleBlock
+        title="대운동장 반입 금지 물품 안내"
+        subtitle={[
+          <span key="title" className="bold-14">
+            • 대운동장 반입 금지 물품
+          </span>,
+          "공연 시작 후 모든 식음료 및 주류 (PET 음료만 반입 가능)",
+          "공연 관람에 방해되는 물품 (드론, 대포카메라, 사다리, 셀카봉 등)",
+          "타인에게 위협이 되는 물품 (화약류, 마약류, 깃대, 날카로운 물건 등)",
+          <br key="br" />,
+          <span key="note" className="text-live-red">
+            ※ 적발 시, 대운동장 구역에서 퇴출될 수 있습니다.
+          </span>
+        ]}
+      />
+
+      <Divider />
+
+      <TitleBlock
         title="2024년 비룡제 유니폼 및 굿즈 수령 안내"
         subtitle={[
           "비룡제 유니폼 및 굿즈 수령에 대하여 안내드립니다.",
@@ -59,7 +112,9 @@ const Support = () => {
 
       <TitleBlock title="총학생회 본부 부스 & 의무실 운영 안내" subtitle={["향후 업데이트 예정입니다."]} />
 
-      <TitleBlock className="mt-8" title="문의사항" />
+      <Divider />
+
+      <TitleBlock title="문의사항" />
       <LinkBlock text="2024 비룡제 축제 이메일" to="mailto:inhasg.festival.2024@gmail.com" />
       <LinkBlock className="mt-3" text="인하대학교 총학생회" to="tel:+82328608451" />
       <LinkBlock className="mt-3" text="현재 페이지 공유하기" to="share" />
