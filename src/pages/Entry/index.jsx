@@ -100,6 +100,7 @@ const Entry = () => {
           "2) 입장 시 팔찌 착용 상태 및 본인 확인 절차 진행"
         ]}
       />
+      <LinkBlock text="팔찌 수령 위치 확인하기" to="https://maps.app.goo.gl/Zg68tV46gL3WkRwb6" />
 
       <TitleBlock
         className="mt-8"
