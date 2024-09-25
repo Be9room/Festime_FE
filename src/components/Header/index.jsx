@@ -33,6 +33,7 @@ const Header = () => {
           </button>
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
+            aria-label="menu"
             className="grayblock grayblock-button-hover flex h-10 animate-fadeIn flex-row items-center gap-3 p-3 backdrop-blur-2xl"
           >
             {isMenuOpen ? <ArrowUpSVG className="size-4 rotate-180" /> : <MenuSVG />}

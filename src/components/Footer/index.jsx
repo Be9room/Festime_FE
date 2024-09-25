@@ -1,13 +1,14 @@
 import LogoWebp from "../../assets/images/9roomUnivLogo.webp";
 import GithubIcon from "../../assets/svgs/github.svg?react";
+import handleNavigation from "../../utils/handleMovePage";
 
 const Footer = () => {
   return (
     <footer className="mx-auto flex w-full min-w-80 max-w-md flex-row items-center justify-between px-4 py-8">
-      <img className="mx-4 w-32" src={LogoWebp} />
-      <a className="p-3" href="https://github.com/Be9room" target="_blank">
+      <img className="mx-4 w-32" alt="logo image" src={LogoWebp} />
+      <button className="p-3" onClick={() => handleNavigation("https://github.com/Be9room")} aria-label="github">
         <GithubIcon />
-      </a>
+      </button>
     </footer>
   );
 };
