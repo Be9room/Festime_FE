@@ -11,9 +11,7 @@ export default defineConfig({
     mkcert(),
     VitePWA({
       registerType: "autoUpdate",
-      devOptions: {
-        outDir: "dev-dist"
-      },
+      devOptions: { enabled: true, outDir: "dev-dist" },
       buildOptions: {
         outDir: "dist"
       },
