@@ -3,6 +3,7 @@ import TitleBlock from "../../components/TitleBlock";
 import LinkBlock from "./../../components/LinkBlock/index";
 import Divider from "../../components/Divider";
 import FOOD_ARRAY from "./../../constants/foodArray";
+import FoodMap from "../../assets/images/foodMap.webp";
 
 const Food = () => {
   return (
@@ -22,6 +23,19 @@ const Food = () => {
       <TitleBlock
         title="F&B존 및 취식 구역 운영 안내"
         subtitle={[
+          <img
+            key="F&B존 지도"
+            className="darkgrayblock darkgrayblock-block-hover my-4 w-full scale-105 overflow-hidden"
+            src={FoodMap}
+            alt="F&B존 지도"
+          />,
+          <span key="map description" className="text-success-green">
+            • F&B존 + 취식 구역
+          </span>,
+          <span key="map description" className="text-map-pink">
+            • 취식 구역
+          </span>,
+          <br key="br" />,
           <span key="title" className="bold-14">
             • 위치
           </span>,
