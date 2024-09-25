@@ -10,7 +10,7 @@ const AdBlock = () => {
       <button
         className="darkgrayblock darkgrayblock-button-hover relative flex w-full flex-row gap-3 p-4"
         aria-label="모두의 택시"
-        onClick={() => handleNavigation("", navigate)}
+        onClick={() => handleNavigation("https://litt.ly/modutaxi", navigate)}
       >
         <div className="gap flex flex-grow flex-col items-start">
           <p className="medium-12">축제 끝, 막차 버스 놓쳤다면?</p>
