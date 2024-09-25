@@ -44,6 +44,7 @@ export default {
         "alert-red-10": "#8B35351A",
         "success-green": "#358B48",
         "success-green-10": "#358B481A",
+        "map-pink": "#AE4995",
 
         "text-primary": "#BBBBBB",
         "text-week": "#BBBBBB80",

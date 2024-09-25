@@ -39,6 +39,8 @@ const Food = () => {
           "11:00 ~ 23:00"
         ]}
       />
+      <LinkBlock text="정석학술정보관 위치 확인하기" to="https://maps.app.goo.gl/Ly1A77LWbEq54h226" />
+      <LinkBlock className="mt-3" text="본관 위치 확인하기" to="https://maps.app.goo.gl/7X8Yy9nVTTwRiWqf9" />
 
       <Divider />
 

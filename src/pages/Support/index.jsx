@@ -2,6 +2,7 @@ import Layout from "../../components/Layout";
 import TitleBlock from "../../components/TitleBlock";
 import LinkBlock from "./../../components/LinkBlock/index";
 import Divider from "../../components/Divider";
+import SupportMap from "../../assets/images/supportMap.webp";
 
 const Support = () => {
   return (
@@ -22,6 +23,22 @@ const Support = () => {
       <TitleBlock
         title="비룡제 통행제한구역 안내"
         subtitle={[
+          <img
+            key="통행 제한 구역 지도"
+            className="darkgrayblock darkgrayblock-block-hover my-4 w-full scale-105 overflow-hidden"
+            src={SupportMap}
+            alt="통행 제한 구역 지도"
+          />,
+          <span key="map description" className="text-live-red">
+            • 통행 제한 구역
+          </span>,
+          <span key="map description" className="text-map-pink">
+            • 차량 통행 제한 구역
+          </span>,
+          <span key="map description" className="text-success-green">
+            • 대체 통로
+          </span>,
+          <br key="br" />,
           <span key="title" className="bold-14">
             • 통행 제한 구역
           </span>,
