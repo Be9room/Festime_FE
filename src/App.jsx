@@ -23,13 +23,13 @@ const App = () => {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/support" element={<Support />} />
           <Route path="/entry" element={<Entry />} />
           <Route path="/ticketing" element={<Ticketing />} />
           <Route path="/timetable" element={<TimeTable />} />
           <Route path="/booths" element={<Booths />} />
           <Route path="/food" element={<Food />} />
           <Route path="/event" element={<Event />} />
-          <Route path="/support" element={<Support />} />
           <Route path="*" element={<PageNotFound />} />
         </Routes>
         <Footer />
