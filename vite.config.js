@@ -12,7 +12,10 @@ export default defineConfig({
     VitePWA({
       registerType: "autoUpdate",
       devOptions: {
-        enabled: true
+        outDir: "dev-dist"
+      },
+      buildOptions: {
+        outDir: "dist"
       },
       manifest: {
         name: "2024 비룡제",
