@@ -1,9 +1,13 @@
 import CircleIcon from "../../../assets/svgs/circle.svg?react";
+import { useNavigate } from "react-router-dom";
+import handleNavigation from "../../../utils/handleMovePage";
 
-const MenuLink = ({ text, setIsMenuOpen, clickFunction }) => {
+const MenuLink = ({ text, to, setIsMenuOpen }) => {
+  const navigate = useNavigate();
+
   const handleClick = () => {
     setIsMenuOpen(false);
-    clickFunction();
+    handleNavigation(to, navigate);
   };
 
   return (
