@@ -5,11 +5,7 @@ import Dimmer from "./components/Dimmer";
 import { useState, useEffect } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import MENU_LINK_ARRAY from "../../constants/menuLinkArray";
-
-const PAGE_NAME = {
-  "/": "Home",
-  "/timetable": "TimeTable"
-};
+import PAGE_NAME from "../../constants/pageName";
 
 const Header = () => {
   const navigate = useNavigate();
