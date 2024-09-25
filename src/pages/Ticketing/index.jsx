@@ -1,10 +1,18 @@
 import Layout from "../../components/Layout";
 import TitleBlock from "../../components/TitleBlock";
 import LinkBlock from "./../../components/LinkBlock/index";
+import Divider from "../../components/Divider";
 
 const Ticketing = () => {
   return (
     <Layout>
+      <TitleBlock
+        title="온라인 티켓팅 안내"
+        subtitle={["현 페이지는 아래 내용을 포함하고 있습니다.", "• 비룡제 재학생존 온라인 티켓팅 안내"]}
+      />
+
+      <Divider />
+
       <TitleBlock
         title="비룡제 재학생존 온라인 티켓팅 안내"
         subtitle={[
@@ -59,7 +67,9 @@ const Ticketing = () => {
         ]}
       />
 
-      <TitleBlock className="mt-8" title="문의사항" />
+      <Divider />
+
+      <TitleBlock title="문의사항" />
       <LinkBlock text="2024 비룡제 축제 이메일" to="mailto:inhasg.festival.2024@gmail.com" />
       <LinkBlock className="mt-3" text="인하대학교 총학생회" to="tel:+82328608451" />
       <LinkBlock className="mt-3" text="현재 페이지 공유하기" to="share" />
