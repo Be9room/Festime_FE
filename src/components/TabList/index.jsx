@@ -15,13 +15,13 @@ const TabList = ({ lists, listComponent: ListComponent }) => {
             <button
               key={key}
               onClick={() => setCurrentTab(key)}
-              className={`bold-14 flex-1 px-4 py-2 ${currentTab === key ? "grayblock" : "darkgrayblock darkgrayblock-button-hover"}`}
+              className={`bold-14 flex-1 break-keep px-4 py-2 ${currentTab === key ? "grayblock" : "darkgrayblock darkgrayblock-button-hover"}`}
             >
               {key}
             </button>
           ))}
       </div>
-      <ListComponent scheduleList={lists[currentTab]} />
+      <ListComponent currentTab={currentTab} selectedList={lists[currentTab]} />
     </div>
   );
 };

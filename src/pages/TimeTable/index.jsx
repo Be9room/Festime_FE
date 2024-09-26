@@ -1,7 +1,7 @@
 import Layout from "../../components/Layout";
 import LinkBlock from "../../components/LinkBlock";
 import TabList from "../../components/TabList";
-import TimeTableBlock from "../../components/TimeTableBlock/lindex";
+import TimeTableBlock from "./components/TimeTableBlock";
 import TitleBlock from "../../components/TitleBlock";
 import TIME_TABLE from "../../constants/timeTable";
 

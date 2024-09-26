@@ -42,8 +42,8 @@ export default {
         "live-red": "#FF3B3B",
         "alert-red": "#8B3535",
         "alert-red-10": "#8B35351A",
-        "success-green": "#358B48",
-        "success-green-10": "#358B481A",
+        "success-green": "#38a950",
+        "success-green-10": "#36b6521a",
         "map-pink": "#AE4995",
 
         "text-primary": "#BBBBBB",
