@@ -4,6 +4,9 @@ import svgr from "vite-plugin-svgr";
 import mkcert from "vite-plugin-mkcert";
 import { VitePWA } from "vite-plugin-pwa";
 import { VitePluginRadar } from "vite-plugin-radar";
+import dotenv from "dotenv";
+
+dotenv.config();
 
 export default defineConfig({
   plugins: [
@@ -40,7 +43,7 @@ export default defineConfig({
     }),
     VitePluginRadar({
       analytics: {
-        id: import.meta.env.VITE_GOOGLE_ANALYTICS
+        id: process.env.VITE_GOOGLE_ANALYTICS
       }
     })
   ]
