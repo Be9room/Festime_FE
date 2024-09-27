@@ -4,6 +4,8 @@ import TabList from "../../components/TabList";
 import TimeTableBlock from "./components/TimeTableBlock";
 import TitleBlock from "../../components/TitleBlock";
 import TIME_TABLE from "../../constants/timeTable";
+import CurrentLiveBlock from "../../components/CurrentLiveBlock";
+import Divider from "../../components/Divider";
 
 const TimeTable = () => {
   return (
@@ -16,11 +18,19 @@ const TimeTable = () => {
         ]}
       />
 
-      <TitleBlock className="mt-8" title="일별 타임 테이블" />
+      <Divider />
+
+      <TitleBlock title="진행중인 공연 확인" />
+      <CurrentLiveBlock />
+
+      <Divider />
+
+      <TitleBlock title="일별 타임 테이블" />
       <TabList lists={TIME_TABLE} listComponent={TimeTableBlock} />
 
+      <Divider />
+
       <TitleBlock
-        className="mt-8"
         title="유의 사항"
         subtitle={["재학생존 입장: 17:00", "무대 시작: 17:30", "공연 시간은 당일 상황에 따라 변경될 수 있습니다."]}
       />
