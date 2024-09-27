@@ -27,13 +27,16 @@ const Food = () => {
           { type: "text-green", detail: "• F&B존 + 취식 구역" },
           { type: "text-pink", detail: "• 취식 구역" },
           { type: "br", detail: "" },
+
           { type: "text-title", detail: "위치" },
           { type: "text", detail: "정석학술정보관 뒤" },
           { type: "br", detail: "" },
+
           { type: "text-title", detail: "취식 구역" },
           { type: "text", detail: "정석학술정보관 뒤편 : 약 400석" },
           { type: "text", detail: "본관 뒤편 : 약 600석" },
           { type: "br", detail: "" },
+
           { type: "text-title", detail: "운영 시간" },
           { type: "text", detail: "11:00 ~ 23:00" }
         ]}

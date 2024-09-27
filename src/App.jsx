@@ -3,7 +3,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import MeshGradient from "./components/MeshGradient/index";
 import Header from "./components/Header/index";
-import Footer from "./components/Footer/index";
 
 import Home from "./pages/Home";
 import Entry from "./pages/Entry/index";
@@ -15,6 +14,7 @@ import Event from "./pages/Event/index";
 import Support from "./pages/Support/index";
 import PageNotFound from "./pages/PageNotFound";
 import { TimeProvider } from "./context/TimeContext";
+import GuestBook from "./pages/Guestbook";
 
 const App = () => {
   return (
@@ -25,6 +25,7 @@ const App = () => {
           <Header />
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/guestbook" element={<GuestBook />} />
             <Route path="/support" element={<Support />} />
             <Route path="/entry" element={<Entry />} />
             <Route path="/ticketing" element={<Ticketing />} />
@@ -34,7 +35,6 @@ const App = () => {
             <Route path="/event" element={<Event />} />
             <Route path="*" element={<PageNotFound />} />
           </Routes>
-          <Footer />
         </TimeProvider>
       </BrowserRouter>
     </>
