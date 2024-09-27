@@ -15,6 +15,7 @@ const BoothZoneInformation = ({ currentTab }) => {
               <img
                 key="F&B존 지도"
                 className="darkgrayblock darkgrayblock-block-hover my-4 w-full scale-105 overflow-hidden"
+                loading="lazy"
                 src={StudentBoothMapWebp}
                 alt="F&B존 지도"
               />,
@@ -46,6 +47,7 @@ const BoothZoneInformation = ({ currentTab }) => {
               <img
                 key="F&B존 지도"
                 className="darkgrayblock darkgrayblock-block-hover my-4 w-full scale-105 overflow-hidden"
+                loading="lazy"
                 src={BoothMapWebp}
                 alt="F&B존 지도"
               />,
@@ -78,6 +80,7 @@ const BoothZoneInformation = ({ currentTab }) => {
               <img
                 key="F&B존 지도"
                 className="darkgrayblock darkgrayblock-block-hover my-4 w-full scale-105 overflow-hidden"
+                loading="lazy"
                 src={storeMapWebp}
                 alt="F&B존 지도"
               />,

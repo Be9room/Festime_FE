@@ -8,7 +8,7 @@ const Footer = () => {
 
   return (
     <footer className="mx-auto flex w-full min-w-80 max-w-md flex-row items-center justify-between px-4 py-8">
-      <img className="mx-4 w-32" alt="logo image" src={LogoWebp} />
+      <img className="mx-4 w-32" loading="lazy" alt="logo image" src={LogoWebp} />
       <button
         className="p-3"
         onClick={() => handleNavigation("https://github.com/Be9room", navigate)}

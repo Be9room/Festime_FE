@@ -20,7 +20,7 @@ const MainTimetable = () => {
         NOW {dateObj.toLocaleDateString("en-ZA").replaceAll(`/`, ".")}
       </p>
       <div className="relative mb-4 w-full">
-        <img className="h-36 w-full object-contain" alt="clock backbround image" src={timerBackground} />
+        <img className="h-36 w-full object-contain" loading="lazy" alt="clock backbround image" src={timerBackground} />
         <p className="bold-64 absolute top-0 mt-4 w-full text-center tracking-tighter text-text-primary">
           {dateObj.toLocaleTimeString("en-ZA")}
         </p>

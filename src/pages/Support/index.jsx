@@ -26,6 +26,7 @@ const Support = () => {
           <img
             key="통행 제한 구역 지도"
             className="darkgrayblock darkgrayblock-block-hover my-4 w-full scale-105 overflow-hidden"
+            loading="lazy"
             src={SupportMap}
             alt="통행 제한 구역 지도"
           />,
