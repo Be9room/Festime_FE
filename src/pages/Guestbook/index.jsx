@@ -64,7 +64,7 @@ const GuestBook = () => {
       )}
 
       <footer className="fixed bottom-0 left-1/2 z-50 flex w-screen min-w-80 -translate-x-1/2 transform justify-center bg-gradient-to-t from-[#1a1a1a] via-[#1a1a1aB3] to-[#1a1a1a00]">
-        <div className="bold-14 mx-auto flex min-w-80 max-w-md flex-1 flex-row items-end justify-between gap-4 p-5">
+        <div className="mx-auto flex min-w-80 max-w-md flex-1 flex-row items-end justify-between gap-4 p-5">
           <div className="grayblock grayblock-block-hover flex h-fit flex-1 px-4 py-2 backdrop-blur-xl">
             <textarea
               className="medium-16 no-scrollbar max-h-[142px] flex-1 resize-none bg-transparent focus:outline-none"
