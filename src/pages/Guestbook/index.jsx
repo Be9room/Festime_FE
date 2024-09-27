@@ -67,7 +67,7 @@ const GuestBook = () => {
         <div className="bold-14 mx-auto flex min-w-80 max-w-md flex-1 flex-row items-end justify-between gap-4 p-5">
           <div className="grayblock grayblock-block-hover flex h-fit flex-1 px-4 py-2 backdrop-blur-xl">
             <textarea
-              className="medium-14 no-scrollbar max-h-[142px] flex-1 resize-none bg-transparent focus:outline-none"
+              className="medium-16 no-scrollbar max-h-[142px] flex-1 resize-none bg-transparent focus:outline-none"
               placeholder="방명록을 입력해주세요. (최대 300자)"
               value={message}
               onChange={handleChange}
