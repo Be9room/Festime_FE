@@ -1,16 +1,16 @@
-import TitleBlock from "../../../components/TitleBlock";
+import TextBlock from "../../../components/TextBlock";
 import BoothZoneInformation from "./BoothZoneInformation";
 
 const BoothTableBlock = ({ currentTab, selectedList }) => {
   return (
     <>
       <BoothZoneInformation currentTab={currentTab} />
-      <TitleBlock title="부스 목록" />
+      <TextBlock title="부스 목록" />
       <div className="flex w-full flex-col gap-3">
         {selectedList &&
           selectedList.map(({ number, name, detail }) => (
             <div
-              key={name}
+              key={name + number}
               className="darkgrayblock darkgrayblock-block-hover medium-14 relative flex max-h-14 w-full flex-col gap-2 overflow-hidden p-4 duration-500 hover:max-h-32"
             >
               <div className="bold-14 mb-2 flex w-full pr-14">
@@ -20,7 +20,7 @@ const BoothTableBlock = ({ currentTab, selectedList }) => {
                 {number}
               </span>
               {detail.map((text) => (
-                <span key="text">{text}</span>
+                <span key={text}>{text}</span>
               ))}
             </div>
           ))}

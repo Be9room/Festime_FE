@@ -10,7 +10,6 @@ const CurrentLiveBlock = () => {
   useEffect(() => {
     const today = `${String(dateObj.getMonth() + 1).padStart(2, "0")}/${String(dateObj.getDate()).padStart(2, "0")}`;
     const todaySchedule = TIME_TABLE[today] || [];
-    console.log(today, todaySchedule);
 
     const ongoingShows = todaySchedule.filter((show) => dateObj >= show.startTime && dateObj <= show.endTime);
 
