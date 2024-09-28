@@ -1,7 +1,6 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import svgr from "vite-plugin-svgr";
-import mkcert from "vite-plugin-mkcert";
 import { VitePWA } from "vite-plugin-pwa";
 import { VitePluginRadar } from "vite-plugin-radar";
 import dotenv from "dotenv";
@@ -9,10 +8,10 @@ import dotenv from "dotenv";
 dotenv.config();
 
 export default defineConfig({
+  define: { global: "window" },
   plugins: [
     react(),
     svgr(),
-    mkcert(),
     VitePWA({
       registerType: "autoUpdate",
       devOptions: { enabled: true, outDir: "dev-dist" },
