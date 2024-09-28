@@ -1,6 +1,5 @@
 import CircleIcon from "../../assets/svgs/circle.svg?react";
 import { useState, useEffect, useRef } from "react";
-import AdBlock from "../../components/AdBlock";
 import * as StompJs from "@stomp/stompjs";
 import axios from "axios";
 
