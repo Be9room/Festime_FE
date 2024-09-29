@@ -1,8 +1,23 @@
-# React + Vite
+![boarlog1](public/ogimage.png)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### 2024 비룡제 - Festime
 
-Currently, two official plugins are available:
+본 프로젝트는 2024년 인하대학교 비룡제 안내를 위한 프로젝트입니다.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+2024년 09월 30일부터 10월 02일까지 진행되는 인하대학교 비룡제에 대한 정보를 보다 편하게 확인할 수 있도록 구성했습니다.
+
+### Project Stack
+
+- @stomp/stompjs
+- axios
+- dotenv
+- global
+- postcss
+- prettier
+- prettier-plugin-tailwindcss
+- react
+- react-dom
+- react-router-dom
+- sockjs-client
+- tailwindcss
+- vite-plugin-svgr
