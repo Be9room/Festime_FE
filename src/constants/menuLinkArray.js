@@ -6,7 +6,7 @@ const MENU_LINK_ARRAY = [
   { text: "공연 순서 안내", to: "/timetable" },
   { text: "비룡제 부스 배치 안내", to: "/booths" },
   { text: "F&B존, 취식 구역 안내", to: "/food" },
-  { text: "서포터즈 부스 이벤트", to: "/event" },
+  { text: "비룡제 이벤트 안내", to: "/event" },
   { text: "공유하기", to: "share" }
 ];
 Object.freeze(MENU_LINK_ARRAY);

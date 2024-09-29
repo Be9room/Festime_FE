@@ -20,7 +20,10 @@ const TimeTable = () => {
 
       <Divider />
 
-      <TextBlock title="진행중인 공연 확인" />
+      <TextBlock
+        title="진행중인 공연 확인"
+        innerComponent={[{ type: "text-red", detail: "※ 실제 공연 진행과 다를 수 있습니다." }]}
+      />
       <CurrentLiveBlock />
 
       <Divider />
@@ -31,7 +34,7 @@ const TimeTable = () => {
       <Divider />
 
       <TextBlock
-        title="유의 사항"
+        title="문의 사항"
         text={[
           { type: "text", detail: "재학생존 입장: 17:00" },
           { type: "text", detail: "무대 시작: 17:30" },

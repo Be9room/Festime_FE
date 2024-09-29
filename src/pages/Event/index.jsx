@@ -9,7 +9,7 @@ const Event = () => {
   return (
     <Layout>
       <TextBlock
-        title="이벤트 안내"
+        title="비룡제 이벤트 안내"
         innerComponent={[
           { type: "text", detail: "현 페이지는 아래 내용을 포함하고 있습니다." },
           { type: "text", detail: "• 서포터즈 부스 운영 안내" },
