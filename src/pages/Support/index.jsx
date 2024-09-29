@@ -2,6 +2,7 @@ import Layout from "../../components/Layout";
 import TextBlock from "../../components/TextBlock";
 import LinkBlock from "./../../components/LinkBlock/index";
 import Divider from "../../components/Divider";
+import BusMap from "../../assets/images/busMap.webp";
 import SupportMap from "../../assets/images/supportMap.webp";
 
 const Support = () => {
@@ -11,12 +12,51 @@ const Support = () => {
         title="축제 안내사항"
         innerComponent={[
           { type: "text", detail: "현 페이지는 아래 내용을 포함하고 있습니다." },
+          { type: "text", detail: "• 비룡제 당일 심야버스 운영 안내" },
           { type: "text", detail: "• 비룡제 통행제한구역 안내" },
           { type: "text", detail: "• 대운동장 반입 금지 물품 안내" },
           { type: "text", detail: "• 2024년 비룡제 유니폼 및 굿즈 수령 안내" },
           { type: "text", detail: "• 총학생회 본부 부스 & 의무실 운영 안내" }
         ]}
       />
+
+      <Divider />
+
+      <TextBlock
+        title="비룡제 당일 심야버스 운영 안내"
+        innerComponent={[
+          { type: "image", detail: BusMap },
+
+          { type: "text-title", detail: "운행 일시 및 탑승 장소" },
+          { type: "text", detail: "운행 기간: 비룡제 기간(9.30~10.2) 전일" },
+          { type: "text", detail: "출발 시각: 23:00" },
+          { type: "text", detail: "탑승 장소: 비룡주차장 (대운동장 구령대 뒤편 주차장)" },
+          { type: "br", detail: "" },
+
+          { type: "text-title", detail: "운영 노선" },
+          { type: "text", detail: "김포공항역" },
+          { type: "text", detail: "사당역" },
+          { type: "text", detail: "서울역버스종합환승센터" },
+          { type: "text", detail: "분당 (통학노선과 동일)" },
+          { type: "text", detail: "일산 (통학노선과 동일)" },
+          { type: "br", detail: "" },
+
+          { type: "text-title", detail: "유의사항" },
+          {
+            type: "text-red",
+            detail:
+              "※ 김포공항역 및 사당역 운영 노선의 경우 각 2대 운영 예정이며, 나머지 노선의 경우 각 1대 운영 예정입니다."
+          },
+          { type: "text-red", detail: "※ 탑승 가능 시각은 22:45부터이며, 선착순으로 탑승 진행됩니다." },
+          {
+            type: "text-red",
+            detail: "※ 학생증(모바일학생증 포함) 또는 재학생존 입장티켓(팔찌) 소지 인원에 한해 탑승 가능합니다."
+          },
+          { type: "text-red", detail: "※ 현장의 원활한 통제를 위해 안내요원의 지시에 협조해 주시기 바랍니다." },
+          { type: "text-red", detail: "※ 선착순 탑승이 진행되므로, 내부 탑승 인원에 따라 입장이 제한될 수 있습니다." }
+        ]}
+      />
+      <LinkBlock text="비룡주차장 위치 확인하기" to="https://maps.app.goo.gl/VptvX6LWqNisn3TJ7" />
 
       <Divider />
 

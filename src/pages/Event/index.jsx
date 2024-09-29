@@ -2,6 +2,7 @@ import Divider from "../../components/Divider";
 import Layout from "../../components/Layout";
 import TextBlock from "../../components/TextBlock";
 import LinkBlock from "./../../components/LinkBlock/index";
+import SupportBoothMap from "../../assets/images/supportBoothMap.webp";
 
 const Event = () => {
   return (
@@ -22,12 +23,16 @@ const Event = () => {
       <TextBlock
         title="운영 안내"
         innerComponent={[
+          { type: "image", detail: SupportBoothMap },
+
           { type: "text-title", detail: "위치" },
           { type: "text", detail: "정석학술정보관 뒤" },
           { type: "br", detail: "" },
+
           { type: "text-title", detail: "운영 시간" },
           { type: "text", detail: "12:00~18:00" },
           { type: "br", detail: "" },
+
           { type: "text-red", detail: "※ 상품 소진 시 조기 마감될 수 있습니다." }
         ]}
       />
@@ -42,6 +47,7 @@ const Event = () => {
           { type: "text", detail: "참여 방법: 스탬프판을 받은 후 6개 이상의 학생부스에 참여하여 스탬프를 모으면 성공" },
           { type: "text", detail: "상품: 반다나 또는 응원타올" },
           { type: "br", detail: "" },
+
           { type: "text-title", detail: "도전! <7초 맞추기>" },
           {
             type: "text",
