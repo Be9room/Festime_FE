@@ -3,25 +3,24 @@ import Layout from "../../components/Layout";
 import TextBlock from "../../components/TextBlock";
 import LinkBlock from "./../../components/LinkBlock/index";
 import SupportBoothMap from "../../assets/images/supportBoothMap.webp";
+import PhotoBoothMap from "../../assets/images/photoBoothMap.webp";
 
 const Event = () => {
   return (
     <Layout>
       <TextBlock
-        title="서포터즈 부스 운영 안내"
+        title="이벤트 안내"
         innerComponent={[
-          { type: "text", detail: "「2024 비룡제」를 더욱 즐겁게 만들어줄 비룡제 서포터즈 부스를 운영합니다." },
-          {
-            type: "text",
-            detail: "아래 내용 확인하시어 다양한 이벤트에 참여하시고, 비룡제 굿즈도 받아가시길 바랍니다."
-          }
+          { type: "text", detail: "현 페이지는 아래 내용을 포함하고 있습니다." },
+          { type: "text", detail: "• 서포터즈 부스 운영 안내" },
+          { type: "text", detail: "• 비룡제 포토부스(인하 네컷)운영 안내" }
         ]}
       />
 
       <Divider />
 
       <TextBlock
-        title="운영 안내"
+        title="서포터즈 부스 운영 안내"
         innerComponent={[
           { type: "image", detail: SupportBoothMap },
 
@@ -38,9 +37,8 @@ const Event = () => {
       />
       <LinkBlock text="서포터즈 부스 위치 확인하기" to="https://maps.app.goo.gl/KEPq4S12YratYtbp8" />
 
-      <Divider />
-
       <TextBlock
+        className="mt-8"
         title="콘텐츠 안내"
         innerComponent={[
           { type: "text-title", detail: "학생부스 스탬프 투어" },
@@ -59,6 +57,38 @@ const Event = () => {
       <LinkBlock
         text="이벤트 상품 확인하기"
         to="https://www.instagram.com/p/DAct_biBESW/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+      />
+
+      <Divider />
+
+      <TextBlock
+        title="비룡제 포토부스(인하 네컷)운영 안내"
+        innerComponent={[
+          { type: "image", detail: PhotoBoothMap },
+
+          { type: "text-title", detail: "위치" },
+          { type: "text", detail: "학생회관 앞 통일광장 / 5남 앞" },
+          { type: "br", detail: "" },
+
+          { type: "text-title", detail: "운영 시간" },
+          { type: "text", detail: "상시 운영 (9.27~10.2)" },
+          { type: "br", detail: "" },
+
+          { type: "text-title", detail: "운영 가격" },
+          { type: "text", detail: "4컷 프레임 2매 : 4,000원" },
+          { type: "text", detail: "6컷 프레임 2매 : 5,000원" }
+        ]}
+      />
+      <LinkBlock text="통일광장 포토부스 위치 확인하기" to="https://maps.app.goo.gl/J6JETbqffyYfhiJK6" />
+      <LinkBlock
+        className="mt-3"
+        text="5호관 앞 포토부스 위치 확인하기"
+        to="https://maps.app.goo.gl/Hkufvx2VspqS4JwD6"
+      />
+      <LinkBlock
+        className="mt-3"
+        text="포토 프레임 디자인 확인하기"
+        to="https://www.instagram.com/p/DAZ6OKhykPU/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
       />
 
       <Divider />
