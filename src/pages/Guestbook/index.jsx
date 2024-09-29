@@ -2,6 +2,7 @@ import CircleIcon from "../../assets/svgs/circle.svg?react";
 import { useState, useEffect, useRef } from "react";
 import * as StompJs from "@stomp/stompjs";
 import axios from "axios";
+import AdBlock from "../../components/AdBlock";
 
 const GuestBook = () => {
   const [message, setMessage] = useState("");
@@ -158,6 +159,10 @@ const GuestBook = () => {
 
   return (
     <main className="mx-auto flex min-h-dvh min-w-80 max-w-md animate-fadeIn flex-col justify-end gap-6 overflow-y-auto px-6 pb-[88px] pt-[180px]">
+      <div className="fixed left-0 top-20 w-full">
+        <AdBlock eventActive={false} />
+      </div>
+
       <div ref={observerRef} className="h-1 w-full" />
 
       {messageList.length ? (

@@ -8,7 +8,7 @@ const AdBlock = ({ eventActive = true }) => {
   return (
     <div className={`mx-auto w-full min-w-80 max-w-md ${eventActive ? "px-6" : "px-5"}`}>
       <button
-        className={`h-18 relative flex w-full animate-fadeIn flex-row gap-3 p-4 backdrop-blur-2xl ${eventActive ? "darkgrayblock darkgrayblock-button-hover" : "grayblock grayblock-button-hover"}`}
+        className={`h-18 relative flex w-full animate-fadeIn flex-row gap-3 p-4 backdrop-blur-2xl ${eventActive ? "darkgrayblock darkgrayblock-button-hover" : "grayblock grayblock-button-hover z-30"}`}
         aria-label="모두의 택시"
         onClick={() => handleNavigation("https://litt.ly/modutaxi", navigate)}
       >
