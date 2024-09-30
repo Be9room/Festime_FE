@@ -148,9 +148,36 @@ const Support = () => {
       <Divider />
 
       <TextBlock
-        title="총학생회 본부 부스 & 의무실 운영 안내"
-        innerComponent={[{ type: "text", detail: "향후 업데이트 예정입니다." }]}
+        title="총학생회 부스 운영 안내"
+        innerComponent={[
+          { type: "text-title", detail: "위치" },
+          { type: "text", detail: "정석학술정보관 뒤" },
+          { type: "br", detail: "" },
+          { type: "text-title", detail: "총학생회 부스 역할" },
+          { type: "text", detail: "비룡제 행사 관련 민원 접수 및 처리" },
+          { type: "text", detail: "비룡제 리플렛 배부" }
+        ]}
       />
+
+      <TextBlock
+        className="mt-8"
+        title="의무실 부스 운영 안내"
+        innerComponent={[
+          { type: "text-title", detail: "위치" },
+          { type: "text", detail: "정석학술정보관 뒤" },
+          { type: "br", detail: "" },
+          { type: "text-title", detail: "총학생회 부스 역할" },
+          { type: "text", detail: "간단한 외상 처치 및 상비 의약품 제공" },
+          { type: "text", detail: "환자 상태 확인, 응급 환자 초동 조치 및 이송비룡제 리플렛 배부" },
+          { type: "br", detail: "" },
+          {
+            type: "text-red",
+            detail: "※ 몸 상태에 이상을 느끼는 학생분께서는 즉시 의무실을 찾아와 주시길 바랍니다."
+          }
+        ]}
+      />
+
+      <LinkBlock text="총학생회, 의무실 부스 위치 확인하기" to="https://maps.app.goo.gl/KEPq4S12YratYtbp8" />
 
       <Divider />
 
