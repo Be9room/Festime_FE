@@ -12,7 +12,7 @@ export default class Circle {
     this.secondaryColor = secondaryColor;
   }
 
-  draw() {
+  #draw() {
     const timePassed = Date.now() - this.birthTime;
     const fraction = timePassed / this.lifetime;
     const scaleFactor = Math.sin(fraction * Math.PI);
@@ -27,18 +27,18 @@ export default class Circle {
     gradient.addColorStop(0.8, "rgba(0, 0, 0, 0)");
 
     this.ctx.fillStyle = gradient;
-    this.ctx.globalCompositeOperation = "xor";
     this.ctx.fill();
+    this.ctx.globalCompositeOperation = "xor";
     this.ctx.closePath();
   }
 
   update() {
     this.x += this.dx;
     this.y += this.dy;
-    this.draw();
+    this.#draw();
   }
 
   isExpired() {
-    return Date.now() - this.birthTime > this.lifetime + 10;
+    return Date.now() - this.birthTime > this.lifetime;
   }
 }
